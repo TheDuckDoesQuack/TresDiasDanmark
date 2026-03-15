@@ -1,0 +1,32 @@
+﻿<div class="nav-bar">
+    <div>
+        <a asp-page="/Index">
+            <img class="logo" src="/Logo/logo.jpg"/>
+        </a>
+    </div>
+
+
+    <div class="nav-buttons">
+        <a
+            class="@(ViewContext.RouteData.Values["page"]?.ToString() == "/Admin/Weekends" ? "active" : "")"
+            asp-page="/Admin/Weekends">
+            Weekender
+        </a>
+    <a
+        class="@(ViewContext.RouteData.Values["page"]?.ToString() == "/Admin/TeamMembers" ? "active" : "")"
+        asp-page="/Admin/TeamMembers">
+            Team
+        </a>
+        <a
+            class="@(ViewContext.RouteData.Values["page"]?.ToString() == "/Admin/Invite" ? "active" : "")"
+            asp-page="/Admin/Invite">
+            Inviter
+        </a>
+    </div>
+
+    <div class="nav-buttons">
+        <a asp-page="/Admin/Logout">
+            Logout
+        </a>
+    </div>
+</div>

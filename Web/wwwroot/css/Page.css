@@ -20,7 +20,7 @@ footer {
 }
 
 .nav-bar {
-    padding: 0;
+    padding-top: 1rem;
     margin: 0;
     height: 5rem;
     width: 100%;
@@ -51,4 +51,32 @@ footer {
 
 .nav-buttons a.active {
     color: grey;
+}
+
+.btn-login {
+    color: black;
+    font-weight: bold;
+    font-size: 16pt;
+    height: 2rem;
+    width: 100%;
+    background: white;
+    border: none;
+}
+
+.btn-login:hover {
+    color: gray;
+    cursor: pointer;
+    width: 100%
+}
+
+.form-group {
+    width: 100%;
+    margin: 0.5rem;
+}
+
+.login-container{
+    width: 300px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
 }

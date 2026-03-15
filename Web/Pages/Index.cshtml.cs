@@ -2,10 +2,7 @@
 
 namespace Web.Pages.Public;
 
-public class SignUp : PageModel
+public class Index : PageModel
 {
-    public void OnGet()
-    {
-        
-    }
+    public string Title => "Tres Dias";
 }

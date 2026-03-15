@@ -2,9 +2,7 @@
 
 namespace Web.Pages.Public;
 
-public class Index : PageModel
+public class GoAsTeam : PageModel
 {
-    public void OnGet()
-    {
-    }
+    public string Title => "Team";
 }

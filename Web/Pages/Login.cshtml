@@ -1,0 +1,36 @@
+﻿@page
+@model Web.Pages.Admin.Login
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+<div class="login-container">
+    <form method="post">
+        @Html.AntiForgeryToken()
+        
+        <h1>Team Login</h1>
+
+        <div class="form-group">
+            <input 
+                asp-for="Username" 
+                class="form-control" 
+                placeholder="Brugernavn"
+                />
+        </div>
+
+        <div class="form-group">
+            <input 
+                asp-for="Password" 
+                type="password" 
+                class="form-control" 
+                placeholder="Adgangskode"
+            />
+        </div>
+        
+        <div asp-validation-summary="All"></div>
+
+        <button type="submit" class="btn-login">Login</button>
+    </form>
+</div>

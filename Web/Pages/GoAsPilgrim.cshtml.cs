@@ -2,10 +2,7 @@
 
 namespace Web.Pages.Public;
 
-public class GoAsTeam : PageModel
+public class GoAsPilgrim : PageModel
 {
-    public void OnGet()
-    {
-        
-    }
+    public string Title => "Pilgrim";
 }

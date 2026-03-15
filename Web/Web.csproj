@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net9.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
@@ -21,8 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <AdditionalFiles Include="Pages\Public\Shared\_Layout.cshtml" />
-      <AdditionalFiles Include="Pages\Public\Shared\_ViewImports.cshtml" />
+      <AdditionalFiles Include="Pages\Shared\_Navigation.cshtml" />
     </ItemGroup>
 
 </Project>

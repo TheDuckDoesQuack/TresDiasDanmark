@@ -4,8 +4,5 @@ namespace Web.Pages.Public;
 
 public class About : PageModel
 {
-    public void OnGet()
-    {
-        
-    }
+    public string Title => "About";
 }
