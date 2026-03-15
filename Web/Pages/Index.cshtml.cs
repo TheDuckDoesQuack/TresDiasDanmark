@@ -4,5 +4,4 @@ namespace Web.Pages.Public;
 
 public class Index : PageModel
 {
-    public string Title => "Tres Dias";
 }

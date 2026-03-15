@@ -4,5 +4,4 @@ namespace Web.Pages.Public;
 
 public class About : PageModel
 {
-    public string Title => "About";
 }

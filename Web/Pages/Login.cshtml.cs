@@ -9,15 +9,9 @@ namespace Web.Pages.Admin;
 
 public class Login : PageModel
 {
-    public string Title => "Login";
-    
-    [BindProperty]
-    [Required]
-    public string Username { get; set; }
-    
-    [BindProperty]
-    [Required]
-    public string Password { get; set; }
+    [BindProperty] [Required] public string Username { get; set; } = "";
+
+    [BindProperty] [Required] public string Password { get; set; } = "";
     
     public IActionResult OnGet()
     {
@@ -53,7 +47,7 @@ public class Login : PageModel
             return RedirectToPage("/Admin/Weekends");
         }
 
-        ModelState.AddModelError("", "Invalid login attempt");
+        ModelState.AddModelError("", "Fejl i login forsøg");
         return Page();
     }
 }

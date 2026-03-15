@@ -60,7 +60,9 @@ footer {
     height: 2rem;
     width: 100%;
     background: white;
-    border: none;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
 }
 
 .btn-login:hover {
@@ -79,4 +81,10 @@ footer {
     margin-left: 50%;
     transform: translate(-50%, 0);
     display: flex;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+    font-size: 8pt;
 }
